@@ -1,12 +1,16 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import Perfil from './src/Perfil.js';
+import { NavigationContainer } from '@react-navigation/native';
+
+
+import Home from './src/Home';
+import BottomTab from './components/BottomTab';
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Perfil />
-    </View>
+    <NavigationContainer style={styles.container}>
+      <BottomTab />
+    </NavigationContainer>
   );
 };
 
