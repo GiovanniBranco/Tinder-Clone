@@ -25,6 +25,14 @@ export default function BottomTab() {
             isActive = focused ? 'ios-list-box' : 'ios-list';
           } else if (route.name === 'Perfil') {
             iconName = 'male';
+          }
+
+          if (route.name === 'Perfil') {
+            iconName = 'tinder';
+            isActive = focused
+              ? 'ios-information-circle'
+              : 'ios-information-circle-outline';
+          } else if (route.name === 'Settings') {
             isActive = focused ? 'ios-list-box' : 'ios-list';
           }
           return <Fontisto name={iconName} size={size} color={color} />;

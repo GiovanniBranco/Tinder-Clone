@@ -1,10 +1,9 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-
+import { StyleSheet} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
 
 import Home from './src/Home';
-import BottomTab from './components/BottomTab';
+import BottomTab from './components/BottomTab/index';
 
 const App = () => {
   return (
