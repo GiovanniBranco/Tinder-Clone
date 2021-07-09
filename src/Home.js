@@ -36,25 +36,29 @@ export default class Home extends React.Component {
           paginationBoxStyle={styles.pagina}
           ImageComponentStyle={styles.imagens}
         />
-        <View style={styles.info}>
-          <Text style={styles.texto}>Donald Trump </Text>
-          <Text style={styles.idade}>19 </Text>
-          <Ionicons
-            style={styles.iconeinfo}
-            name="information-circle"
-            size={20}
-            color="white"
-          />
-        </View>
-        <View style={styles.visualizacao}>
-          <FontAwesome5
-            name="circle"
-            size={15}
-            color="#7BD746"
-            solid={true}
-            style={styles.iconeOn}
-          />
-          <Text style={styles.online}> Online recentemente</Text>
+
+        <View style={styles.containerInfos}>
+          <View style={styles.infos}>
+            <Text style={styles.texto}>Donald Trump </Text>
+            <Text style={styles.idade}>19 </Text>
+            <Ionicons
+              style={styles.iconeinfo}
+              name="information-circle"
+              size={20}
+              color="white"
+            />
+          </View>
+
+          <View style={styles.visualizacao}>
+            <FontAwesome5
+              name="circle"
+              size={15}
+              color="#7BD746"
+              solid={true}
+              style={styles.iconeOn}
+            />
+            <Text style={styles.online}> Online recentemente</Text>
+          </View>
         </View>
       </View>
     );
@@ -79,23 +83,24 @@ const styles = StyleSheet.create({
     zIndex: 1,
   },
   imagens: {
-    borderRadius: 15,
-    width: '95%',
-    margin: 5,
+    borderRadius: 5,
+    width: '98%',
+    height: "100%",
   },
-  info: {
+  containerInfos: {
     zIndex: 2,
     position: 'absolute',
     fontSize: 28,
+    left: '5%',
+    top: '85%',
+  },
+  infos: {
     flexDirection: 'row',
-    marginTop: 475,
-    marginLeft: 30,
   },
   texto: {
     fontSize: 32,
     fontWeight: '700',
     color: '#FEFFFF',
-    alignSelf: 'flex-start',
     textShadowColor: '#111',
     textShadowOffset: {width: -1, height: 1},
     textShadowRadius: 10,
@@ -115,14 +120,13 @@ const styles = StyleSheet.create({
     textShadowRadius: 10,
   },
   visualizacao: {
-    position: 'absolute',
     fontSize: 28,
+    marginTop: 5,
     flexDirection: 'row',
-    marginTop: 525,
-    marginLeft: 30,
+    alignItems: "center"
   },
   iconeOn: {
-    marginTop: 4,
+    marginRight: 5,
   },
   online: {
     fontSize: 16,
