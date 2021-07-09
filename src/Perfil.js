@@ -1,13 +1,13 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 
+import LinearGradient from 'react-native-linear-gradient';
 import {LinearTextGradient} from 'react-native-text-gradient';
 
 import IconMaterial from 'react-native-vector-icons/MaterialIcons';
 import IconFontAws from 'react-native-vector-icons/FontAwesome';
 import IconOctions from 'react-native-vector-icons/Octicons';
 import IconEntypo from 'react-native-vector-icons/Entypo';
-import LinearGradient from 'react-native-linear-gradient';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 

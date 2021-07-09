@@ -1,12 +1,17 @@
 import React from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {View, StyleSheet, Text, Image} from 'react-native';
 
 import {SliderBox} from 'react-native-image-slider-box';
+import LinearGradient from 'react-native-linear-gradient';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Feather from 'react-native-vector-icons/Feather';
-
+import AntDesign from 'react-native-vector-icons/AntDesign';
+// close, heart
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+// star
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+// lightning-bolt, reload
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -63,7 +68,11 @@ export default class Home extends React.Component {
             />
             <Text style={styles.online}> 12 Km de distância</Text>
           </View>
+          <Image
+          source={require('./Assets/Icons/iconesTinder.png')}
+          style={{width: 350, height: 60, marginTop: 15}} />
         </View>
+        
       </View>
     );
   }
@@ -89,14 +98,14 @@ const styles = StyleSheet.create({
   imagens: {
     borderRadius: 5,
     width: '98%',
-    height: "100%",
+    height: '100%',
   },
   containerInfos: {
     zIndex: 2,
     position: 'absolute',
     fontSize: 28,
     left: '5%',
-    top: '85%',
+    top: '75%',
   },
   infos: {
     flexDirection: 'row',
@@ -127,7 +136,7 @@ const styles = StyleSheet.create({
     fontSize: 28,
     marginTop: 5,
     flexDirection: 'row',
-    alignItems: "center"
+    alignItems: 'center',
   },
   iconeOn: {
     marginRight: 5,
