@@ -4,6 +4,7 @@ import IconMaterial from 'react-native-vector-icons/MaterialIcons';
 import IconFontAws from 'react-native-vector-icons/FontAwesome';
 import IconOctions from 'react-native-vector-icons/Octicons';
 import IconEntypo from 'react-native-vector-icons/Entypo';
+import LinearGradient from 'react-native-linear-gradient';
 
 const Perfil = () => {
   return (
@@ -26,7 +27,12 @@ const Perfil = () => {
         <View style={styles.containerCircCinza}>
           <IconFontAws name="gear" color="#BCC1C7" size={35} />
         </View>
-        <View style={styles.containerCircVermelho}>
+        
+        <LinearGradient
+          start={{x: 0.0, y: 1}}
+          end={{x: 0.4, y: 0}}
+          colors={['#f33b6d', '#f54269', '#f4605b']}
+          style={styles.linearGradient}>
           <IconFontAws
             name="camera"
             color="#F6F6F6"
@@ -36,11 +42,16 @@ const Perfil = () => {
           <View style={styles.containerBranco}>
             <IconEntypo name="plus" color="red" size={15} />
           </View>
-        </View>
+          </LinearGradient>
+        
+        
         <View style={styles.containerCircCinza}>
           <IconOctions name="pencil" color="#BCC1C7" size={35} />
         </View>
+
       </View>
+      <View style={styles.separador} />
+      <View style={styles.propaganda} />
     </View>
   );
 };
@@ -50,15 +61,16 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#F6F6F6',
     width: '100%',
+    
   },
   containerFoto: {
     marginTop: 25,
     alignSelf: 'center',
   },
   foto: {
-    width: 200,
-    height: 200,
-    borderRadius: 100,
+    width: 150,
+    height: 150,
+    borderRadius: 75,
   },
   containerDados: {
     marginTop: 10,
@@ -76,7 +88,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   containerIcones: {
-    flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-around',
   },
@@ -88,7 +99,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  containerCircVermelho: {
+  linearGradient: {
     height: 80,
     width: 80,
     borderRadius: 40,
@@ -102,8 +113,16 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
   containerBranco: {
-    borderWidth: 1,
-    borderColor: '#EBEFF2',
+    shadowColor: "#000",
+    shadowOffset: {
+	  width: 0,
+	  height: 4,
+    },
+    shadowOpacity: 0.30,
+    shadowRadius: 4.65,
+
+    elevation: 8,
+    
     width: 25,
     height: 25,
     borderRadius: 15,
@@ -119,5 +138,33 @@ const styles = StyleSheet.create({
       },
     ],
   },
+  separador: {
+    width: 1000,
+    height: 1000,
+    backgroundColor: "transparent",
+    borderColor: "#ebecf0",
+    borderWidth: 2,
+    borderRadius: 5000,
+    transform: [
+      {
+        translateY: -800,
+      },
+      {
+        translateX: -303,
+      },
+    ],
+  },
+  // propaganda: {
+  //   backgroundColor: "black",
+  //   transform: [
+  //     {
+  //       translateY: -1000,
+  //     },
+  //     {
+  //       translateX: 0,
+  //     },
+  //   ],
+  // },
+  
 });
 export default Perfil;
