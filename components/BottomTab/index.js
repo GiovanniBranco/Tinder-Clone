@@ -16,37 +16,27 @@ export default function BottomTab() {
           let iconName;
 
           if (route.name === 'Home') {
-            iconName = "tinder";
+            iconName = 'tinder';
             isActive = focused
               ? 'ios-information-circle'
               : 'ios-information-circle-outline';
-          } else if (route.name === 'Settings') {
+          } else if (route.name === 'Conversa') {
+            iconName = 'comments';
+            isActive = focused ? 'ios-list-box' : 'ios-list';
+          } else if (route.name === 'Perfil') {
+            iconName = 'male';
             isActive = focused ? 'ios-list-box' : 'ios-list';
           }
-
-          if (route.name === 'Perfil') {
-            iconName = "gear";
-            isActive = focused
-              ? 'ios-information-circle'
-              : 'ios-information-circle-outline';
-          } else if (route.name === 'Settings') {
-            isActive = focused ? 'ios-list-box' : 'ios-list';
-          }
-
-          // You can return any component that you like here!
-          return (
-          <Fontisto name={iconName} size={size} color={color} />
-          )
+          return <Fontisto name={iconName} size={size} color={color} />;
         },
       })}
       tabBarOptions={{
-        activeTintColor: 'tomato',
-        inactiveTintColor: 'gray',
+        activeTintColor: '#e83866',
+        inactiveTintColor: '#BCC1C7',
+        showLabel: false,
       }}>
-      <Tab.Screen
-        name="Home"
-        component={Home}
-      />
+      <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen name="Conversa" component={Perfil} />
       <Tab.Screen name="Perfil" component={Perfil} />
     </Tab.Navigator>
   );
