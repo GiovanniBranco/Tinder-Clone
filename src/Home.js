@@ -1,17 +1,22 @@
 import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
+
 import {SliderBox} from 'react-native-image-slider-box';
+
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import Feather from 'react-native-vector-icons/Feather';
+
+
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       images: [
-        'https://source.unsplash.com/1024x768/?nature',
-        'https://source.unsplash.com/1024x768/?water',
-        'https://source.unsplash.com/1024x768/?girl',
-        'https://source.unsplash.com/1024x768/?tree',
+        'https://images.pexels.com/photos/1638407/pexels-photo-1638407.jpeg?cs=srgb&dl=pexels-meijii-1638407.jpg&fm=jpg',
+        'https://images.pexels.com/photos/1638406/pexels-photo-1638406.jpeg?cs=srgb&dl=pexels-meijii-1638406.jpg&fm=jpg',
+        'https://images.pexels.com/photos/1638408/pexels-photo-1638408.jpeg?cs=srgb&dl=pexels-meijii-1638408.jpg&fm=jpg',
+        'https://images.pexels.com/photos/1638399/pexels-photo-1638399.jpeg?cs=srgb&dl=pexels-meijii-1638399.jpg&fm=jpg',
       ],
     };
   }
@@ -39,8 +44,8 @@ export default class Home extends React.Component {
 
         <View style={styles.containerInfos}>
           <View style={styles.infos}>
-            <Text style={styles.texto}>Donald Trump </Text>
-            <Text style={styles.idade}>19 </Text>
+            <Text style={styles.texto}>Huan</Text>
+            <Text style={styles.idade}>19</Text>
             <Ionicons
               style={styles.iconeinfo}
               name="information-circle"
@@ -50,14 +55,13 @@ export default class Home extends React.Component {
           </View>
 
           <View style={styles.visualizacao}>
-            <FontAwesome5
-              name="circle"
-              size={15}
-              color="#7BD746"
-              solid={true}
+            <Feather
+              name="map-pin"
+              size={17}
+              color="#fff"
               style={styles.iconeOn}
             />
-            <Text style={styles.online}> Online recentemente</Text>
+            <Text style={styles.online}> 12 Km de distância</Text>
           </View>
         </View>
       </View>
