@@ -55,7 +55,7 @@ const Perfil = () => {
         </View>
 
         <View style={styles.containerIcone}>
-        <View style={styles.containerCircCinza}>
+        <View style={styles.containerCircCinza2}>
           <IconOctions name="pencil" color="#BCC1C7" size={35} />
         </View>
         <Text style={styles.descricaoIcone}>EDITAR INFO</Text>
@@ -65,7 +65,7 @@ const Perfil = () => {
       <View style={styles.propaganda}>
         <View style={styles.primeiraLinha}>
           <Fontisto name="tinder" size={30} color="#D69E3A" />
-          <Text style={styles.textoPropaganda}>Assine o Tinder Gold</Text>
+          <Text style={styles.textoPropaganda}>Assine o Tinder Gold&trade;</Text>
         </View>
         <Text>Veja quem curtiu você e mais!</Text>
         <View style={styles.circle}>
@@ -85,7 +85,7 @@ const Perfil = () => {
             colors={['#d69e3a', '#d1a758']}
             start={{x: 0, y: 0}}
             end={{x: 1, y: 0}}>
-            <Text>ASSINE O TINDER GOLD</Text>
+            <Text>ASSINE O TINDER GOLD&trade;</Text>
           </LinearTextGradient>
         </TouchableOpacity>
       </View>
@@ -134,7 +134,25 @@ const styles = StyleSheet.create({
   containerCircCinza: {
     height: 70,
     width: 70,
-    right: -2,
+    right: -10,
+    borderRadius: 40,
+    backgroundColor: '#EBEFF2',
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.18,
+    shadowRadius: 1.0,
+
+    elevation: 1,
+  },
+  containerCircCinza2: {
+    height: 70,
+    width: 70,
+    right: 4,
     borderRadius: 40,
     backgroundColor: '#EBEFF2',
     alignItems: 'center',
@@ -199,30 +217,17 @@ const styles = StyleSheet.create({
   },
   separador: {
     zIndex: 1,
-    width: 1000,
-    height: 1000,
+    width: "200%",
+    height: "200%",
     backgroundColor: '#F6F6F6',
     borderColor: '#ebecf0',
     borderWidth: 2,
     borderRadius: 5000,
-    transform: [
-      {
-        translateY: -875,
-      },
-      {
-        translateX: -303,
-      },
-    ],
+    left: "-50%",
+    top:"-184%"
   },
   propaganda: {
-    transform: [
-      {
-        translateY: -870,
-      },
-      {
-        translateX: 0,
-      },
-    ],
+    top: "-183%",
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -248,7 +253,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 15,
     borderRadius: 30,
-    width: 250,
+    width: 260,
     height: 55,
     backgroundColor: '#F6F6F6',
     shadowColor: '#000',
