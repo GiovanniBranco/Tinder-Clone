@@ -224,10 +224,10 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderRadius: 5000,
     left: "-50%",
-    top:"-184%"
+    top:"-185%"
   },
   propaganda: {
-    top: "-183%",
+    top: "-184%",
     justifyContent: 'center',
     alignItems: 'center',
   },
