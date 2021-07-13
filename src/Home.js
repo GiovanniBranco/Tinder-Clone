@@ -117,6 +117,7 @@ const styles = StyleSheet.create({
     textShadowColor: '#111',
     textShadowOffset: {width: -1, height: 1},
     textShadowRadius: 10,
+    margin: 5,
   },
   idade: {
     marginTop: 7,
@@ -125,6 +126,7 @@ const styles = StyleSheet.create({
     textShadowColor: '#111',
     textShadowOffset: {width: -1, height: 1},
     textShadowRadius: 10,
+    margin: 5,
   },
   iconeinfo: {
     marginTop: 15,
@@ -135,8 +137,10 @@ const styles = StyleSheet.create({
   visualizacao: {
     fontSize: 28,
     marginTop: 5,
+    marginLeft: 5,
     flexDirection: 'row',
     alignItems: 'center',
+
   },
   iconeOn: {
     marginRight: 5,

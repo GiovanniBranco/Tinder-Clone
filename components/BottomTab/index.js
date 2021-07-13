@@ -6,6 +6,8 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import Home from '../../src/Home';
+import Curtidas from '../../src/Curtidas';
+import Conversas from '../../src/Conversas';
 import Perfil from '../../src/Perfil';
 
 const Tab = createBottomTabNavigator();
@@ -48,8 +50,8 @@ export default function BottomTab() {
         showLabel: false,
       }}>
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Curtidas" component={Home} />
-      <Tab.Screen name="Conversa" component={Perfil} />
+      <Tab.Screen name="Curtidas" component={Curtidas} />
+      <Tab.Screen name="Conversa" component={Conversas} />
       <Tab.Screen name="Perfil" component={Perfil} />
     </Tab.Navigator>
   );
