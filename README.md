@@ -7,7 +7,12 @@ Clone do App tinder desenvolvido em React Native.
 
 ## Prints do App:
 
-
+App Desenvolvido           |  App Clonado
+:-------------------------:|:-------------------------:
+![](<p float="left">
+<img src="https://github.com/GiovanniBranco/Tinder-Clone/blob/main/.github/home.jpeg" height=400 width=200/>
+<img src="https://github.com/GiovanniBranco/Tinder-Clone/blob/main/.github/homeApp.png" height=400 width=200/>
+</p>)   |  ![](https://github.com/GiovanniBranco/Tinder-Clone/blob/main/.github/homeApp.png)
 <p float="left">
 <img src="https://github.com/GiovanniBranco/Tinder-Clone/blob/main/.github/home.jpeg" height=400 width=200/>
 <img src="https://github.com/GiovanniBranco/Tinder-Clone/blob/main/.github/homeApp.png" height=400 width=200/>
